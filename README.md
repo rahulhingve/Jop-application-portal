@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+#  - Job Application Portal
 
-## Getting Started
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+##  Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Multi-step application process** - Guided experience with progress tracking
+- **File uploads** - Support for resume, audio, and video responses
+- **Real-time validation** - Instant feedback on form inputs
+- **Database storage** - Persistent storage of all application data
+- **Admin dashboard** - View all submitted applications
+- **Mobile-responsive** - Works seamlessly on all devices
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+##  How It Works
 
-## Learn More
+### For Applicants
 
-To learn more about Next.js, take a look at the following resources:
+1. **Step 1: Personal Information**
+   - Fill in your basic contact details (name, email, phone)
+   - Simple validation ensures correct formatting
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Step 2: Resume Upload**
+   - Upload your resume (supports PDF, DOCX, and other common formats)
+   - Files are securely stored in the server's public directory
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. **Step 3: Behavioral Questions**
+   - Answer the behavioral question through text, audio recording, or video response
+   - Multiple response options to showcase your personality and communication style
 
-## Deploy on Vercel
+4. **Success Page**
+   - Confirmation of your application submission
+   - Summary of all information provided
+   - Options to download your submitted materials
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### For Recruiters/Admins
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Applications Dashboard** (/applications)
+   - View all submitted applications in one place
+   - Sort and filter applications based on various criteria
+   - Access applicant details and their submitted materials
+
+##  Technical Details
+
+- **Frontend**: Next.js 15.3, React 19, TypeScript, Tailwind CSS
+- **Backend**: Next.js API routes
+- **Database**: SQLite with Prisma ORM
+- **Storage**: File storage system for resumes and media responses
+- **Form Management**: Custom state management with React hooks
+
+##  Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or later)
+- npm or pnpm package manager
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/aimploy.git
+   cd aimploy
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   pnpm install
+   ```
+
+3. Set up the database:
+   ```bash
+   npx prisma generate
+   ```
+
+4. Run the development server:
+   ```bash
+   npm run dev
+   # or
+   pnpm dev
+   ```
+
+5. Open your browser and navigate to [http://localhost:3000](http://localhost:3000)
+
+
+
+
+
+
+---
+
+

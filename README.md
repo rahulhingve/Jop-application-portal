@@ -59,8 +59,8 @@
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/aimploy.git
-   cd aimploy
+   git clone https://github.com/rahulhingve/Jop-application-portal
+   cd Jop-application-portal
    ```
 
 2. Install dependencies:
